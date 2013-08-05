@@ -12,6 +12,7 @@ class CenterModule extends CWebModule
 			'center.models.*',
 			'center.components.*',
 			'person.models.Person',
+			'person.models.Professor'
 		));
 	}
 

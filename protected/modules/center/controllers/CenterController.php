@@ -54,6 +54,14 @@ class CenterController extends Controller
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
+		
+	
+			$center = Center::model()->with('classes')->findByPk($id);
+		foreach($center->classes as $class){
+		$this->renderPartial('_class', array('data'=>$class));
+		}
+		
+		
 	}
 
 	/**
@@ -126,6 +134,7 @@ class CenterController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+		
 	}
 
 	/**

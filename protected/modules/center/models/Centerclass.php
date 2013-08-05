@@ -1,26 +1,18 @@
 <?php
 
 /**
- * This is the model class for table "center".
+ * This is the model class for table "centerclass".
  *
- * The followings are the available columns in table 'center':
+ * The followings are the available columns in table 'centerclass':
  * @property integer $cent_id
- * @property string $name
- * @property string $location
- *
- * The followings are the available model relations:
- * @property Class[] $classes
- * @property Extsupervisor[] $extsupervisors
- * @property Intsupervisor[] $intsupervisors
- * @property Professor[] $professors
- * @property Student[] $students
+ * @property string $cl_id
  */
-class Center extends CActiveRecord
+class Centerclass extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Center the static model class
+	 * @return Centerclass the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -32,7 +24,7 @@ class Center extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'center';
+		return 'centerclass';
 	}
 
 	/**
@@ -43,12 +35,12 @@ class Center extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cent_id', 'required'),
+			array('cent_id, cl_id', 'required'),
 			array('cent_id', 'numerical', 'integerOnly'=>true),
-			array('name, location', 'length', 'max'=>45),
+			array('cl_id', 'length', 'max'=>32),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('cent_id, name, location', 'safe', 'on'=>'search'),
+			array('cent_id, cl_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,11 +52,6 @@ class Center extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'classes' => array(self::MANY_MANY, 'Classs', 'centerclass(cent_id, cl_id)'),
-			'extsupervisors' => array(self::MANY_MANY, 'Extsupervisor', 'extsupcenter(cent_id, ext_supr_id)'),
-			'intsupervisors' => array(self::HAS_MANY, 'Intsupervisor', 'cent_id'),
-			'professors' => array(self::HAS_MANY, 'Professor', 'cent_id'),
-			'students' => array(self::HAS_MANY, 'Student', 'cent_id'),
 		);
 	}
 
@@ -75,8 +62,7 @@ class Center extends CActiveRecord
 	{
 		return array(
 			'cent_id' => 'Center ID',
-			'name' => 'Center Name',
-			'location' => 'Location',
+			'cl_id' => 'Class ID',
 		);
 	}
 
@@ -92,8 +78,7 @@ class Center extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('cent_id',$this->cent_id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('location',$this->location,true);
+		$criteria->compare('cl_id',$this->cl_id,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

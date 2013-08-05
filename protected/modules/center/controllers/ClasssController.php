@@ -54,6 +54,7 @@ class ClasssController extends Controller
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
+		
 	}
 
 	/**
@@ -70,8 +71,15 @@ class ClasssController extends Controller
 		if(isset($_POST['Classs']))
 		{
 			$model->attributes=$_POST['Classs'];
-			if($model->save())
+			if($model->save()){
+				$modelProf = Professor::model()->findByPk($model->prof_id);
+				$modelCenterClass = new Centerclass();
+				$modelCenterClass->cent_id=$modelProf->cent_id;
+				$modelCenterClass->cl_id = $model->cl_id;
+				if ($modelCenterClass->save())
 				$this->redirect(array('view','id'=>$model->cl_id));
+			}
+				
 		}
 
 		$this->render('create',array(
@@ -94,8 +102,11 @@ class ClasssController extends Controller
 		if(isset($_POST['Classs']))
 		{
 			$model->attributes=$_POST['Classs'];
-			if($model->save())
+			if($model->save()){
+				
 				$this->redirect(array('view','id'=>$model->cl_id));
+			}
+				
 		}
 
 		$this->render('update',array(
@@ -170,13 +181,13 @@ class ClasssController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
-
+	
 	public function getModuleCodes(){
 		$modulecodes = CHtml::listData(Module::model()->findAll(),'mod_id','mod_name');
 		return $modulecodes;
 	}
 	public function getProfList(){
-		$proflist = CHtml::listData(Person::model()->findAll(),'id','firstname');
+		$proflist = CHtml::listData(Person::model()->findAllByAttributes(array('type' => '1')),'id','firstname');
 		return $proflist;
 	}
 	/**

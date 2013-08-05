@@ -275,10 +275,10 @@ class PersonController extends Controller
 	}
 
 	
-public function getCenterList(){
-		$centerlist = CHtml::listData(Center::model()->findAll(),'cent_id','name');
-		return $centerlist;
-	}
+	public function getCenterList(){
+			$centerlist = CHtml::listData(Center::model()->findAll(),'cent_id','name');
+			return $centerlist;
+		}
 	/**
 	 * Performs the AJAX validation.
 	 * @param Person $model the model to be validated
