@@ -28,11 +28,10 @@ class PersonController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+			array('allow',  // allow admin only
 				'actions'=>array('index','view','create','update','admin','delete'),
 				'roles'=>array('3'),
 			),
-			
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),

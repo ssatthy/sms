@@ -1836,3 +1836,803 @@ Stack trace:
 REQUEST_URI=/sms/index.php?r=person/person
 HTTP_REFERER=http://localhost/sms/index.php?r=site/login
 ---
+2013/08/05 02:10:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "person".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('person')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('person')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/person')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 C:\wamp\www\sms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sms/index.php?r=site/person
+HTTP_REFERER=http://localhost/sms/index.php?r=site/login
+---
+2013/08/05 02:11:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "person/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\sms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sms/index.php?r=person/index
+HTTP_REFERER=http://localhost/sms/index.php?r=site/login
+---
+2013/08/05 02:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "person/Center/center/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/Center/c...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\sms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sms/index.php?r=person/Center/center/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "person/center/center/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/center/c...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\sms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sms/index.php?r=person/center/center/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:29:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "person/center/center".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/center/c...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\wamp\www\sms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sms/index.php?r=person/center/center
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:35:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:35:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/center/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/center/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:35:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/module/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/module/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:35:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/classs/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:37:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:37:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/person
+---
+2013/08/05 02:38:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/person/view&id=gru
+---
+2013/08/05 02:38:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/center/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/center/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/
+---
+2013/08/05 02:38:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/module/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/module/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/
+---
+2013/08/05 02:38:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/classs/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/
+---
+2013/08/05 02:38:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/classs/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/
+---
+2013/08/05 02:39:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs/a...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/classs/admin
+HTTP_REFERER=http://localhost/sms/index.php?r=person/
+---
+2013/08/05 02:42:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 02:42:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:02:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs/d...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=center/classs/delete&id=CL001
+HTTP_REFERER=http://localhost/sms/index.php?r=center/classs/view&id=CL001
+---
+2013/08/05 03:16:48 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:16:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:20:57 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:20:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:23:14 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:23:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:24:54 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::app()->user->id' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=Yii::app()->user->id.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:24:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::app()->user->id' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=Yii::app()->user->id' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:25:08 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:25:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gru' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=gru' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:25:44 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=rkumar.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:25:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=rkumar' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:30:52 [error] [php] reset() expects parameter 1 to be array, string given (C:\wamp\www\yii\framework\db\schema\CDbCriteria.php:274)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): ClasssController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): ClasssController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): ClasssController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ClasssController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\wamp\www\sms\index.php(13): CWebApplication->run()
+REQUEST_URI=/sms/index.php?r=center/classs
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (126)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:31:33 [error] [php] reset() expects parameter 1 to be array, string given (C:\wamp\www\yii\framework\db\schema\CDbCriteria.php:274)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): ClasssController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): ClasssController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): ClasssController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ClasssController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\wamp\www\sms\index.php(13): CWebApplication->run()
+REQUEST_URI=/sms/index.php?r=center/classs
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (126)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:32:31 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=rkumar.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:32:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE prof_id=rkumar' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:35:12 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE t.prof_id=rkumar.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:35:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE t.prof_id=rkumar' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:37:53 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'having clause'. The SQL statement executed was: SELECT COUNT(*) FROM (SELECT * FROM `class` `t` HAVING prof_id=rkumar) sq.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:37:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rkumar' in 'having clause'. The SQL statement executed was: SELECT COUNT(*) FROM (SELECT * FROM `class` `t` HAVING prof_id=rkumar) sq' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:38:49 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'professor.prof_id' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE professor.prof_id=rkumar.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:38:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'professor.prof_id' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE professor.prof_id=rkumar' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 03:39:51 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CL001' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE cl_id=CL001.
+in C:\wamp\www\sms\protected\modules\center\views\classs\index.php (20)
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (133)
+in C:\wamp\www\sms\index.php (13)
+2013/08/05 03:39:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'CL001' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `class` `t` WHERE cl_id=CL001' in C:\wamp\www\yii\framework\db\CDbCommand.php:541
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(432): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1546): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(107): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\CListView.php(203): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(147): CListView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#10 C:\wamp\www\sms\protected\modules\center\views\classs\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sms...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sms...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sms...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#15 C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php(133): CController->render('index', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): ClasssController->actionIndex()
+#17 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('center/classs')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#28 C:\wamp\www\sms\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/sms/index.php?r=center/classs
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 04:04:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('person/person')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/sms/index.php?r=person/person
+HTTP_REFERER=http://localhost/sms/index.php?r=person
+---
+2013/08/05 04:05:41 [error] [php] Undefined variable: dataProvider (C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php:140)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): ClasssController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): ClasssController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): ClasssController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): ClasssController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\wamp\www\sms\index.php(13): CWebApplication->run()
+REQUEST_URI=/sms/index.php?r=center/classs
+in C:\wamp\www\sms\protected\modules\center\controllers\ClasssController.php (140)
+in C:\wamp\www\sms\index.php (13)

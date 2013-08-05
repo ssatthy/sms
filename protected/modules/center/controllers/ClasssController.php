@@ -122,7 +122,20 @@ class ClasssController extends Controller
 	 */
 	public function actionIndex()
 	{
+		if(Yii::app()->user->checkAccess('1')){
+		$dataProvider=new CActiveDataProvider('Classs', array(
+		    'criteria'=>array(
+		        'condition'=>'prof_id=:userId',
+      			'params' => array(':userId' => Yii::app()->user->id),
+		    ),
+		));
+		
+		}
+	if(Yii::app()->user->checkAccess('3')){
 		$dataProvider=new CActiveDataProvider('Classs');
+		}
+		
+		
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
