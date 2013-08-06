@@ -51,16 +51,18 @@ class CenterController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
+            
+            			$center = Center::model()->with('classes')->findByPk($id);
+		$dataProvider =  new CActiveDataProvider('Classs');
+                $dataProvider->setData($center->classes);
+          
+                $this->render('view',array(
 			'model'=>$this->loadModel($id),
+                        'dataProvider'=>$dataProvider,
 		));
 		
 	
-			$center = Center::model()->with('classes')->findByPk($id);
-		foreach($center->classes as $class){
-		$this->renderPartial('_class', array('data'=>$class));
-		}
-		
+
 		
 	}
 

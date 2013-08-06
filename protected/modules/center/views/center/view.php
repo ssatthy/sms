@@ -25,4 +25,11 @@ $this->menu=array(
 		'name',
 		'location',
 	),
+)); 
+                
+                ?>
+
+<?php $this->widget('zii.widgets.CListView', array(
+	'dataProvider'=>$dataProvider,
+	'itemView'=>'/classs/_view',
 )); ?>
